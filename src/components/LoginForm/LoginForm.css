@@ -1,0 +1,128 @@
+.login-form {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.login-form__header {
+  font-size: 36px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.login-form__warrning-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: transparent;
+}
+
+.login-form__input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.login-form__input-box__input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  outline: none;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.login-form__input-box__input::placeholder {
+  color: #fff;
+}
+
+.login-form__input-box__icon {
+  position: absolute;
+  right: 20px;
+  top: 35%;
+  transform: translate(-50%);
+  font-size: 16px;
+}
+
+.login-form__remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.login-form__remember-forgot__label .login-form__remember-forgot__input {
+  accent-color: #fff;
+  margin-right: 4px;
+}
+.login-form__remember-forgot__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-form__remember-forgot__link:hover {
+  text-decoration: underline;
+}
+
+.login-form__button {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+
+  transition: 1s;
+}
+
+.login-form__button:hover {
+  background-color: rgb(121, 160, 121);
+  transform: scale(1.05);
+}
+
+.login-form__register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.login-form__register-link__text .login-form__register-link__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-form__register-link__text .login-form__register-link__link:hover {
+  text-decoration: underline;
+}
+
+.login-form__error-border {
+  border-color: red; 
+}
+
+.login-form__error-massage {
+  color: red;
+}
+
+.login-form__success--button {
+  background-color: lawngreen;
+  color: grey;
+}
+
+.login-form__success--button:hover {
+  background-color: lawngreen;
+  transform: none;
+}

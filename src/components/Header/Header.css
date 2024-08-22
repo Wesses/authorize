@@ -1,0 +1,14 @@
+.header {
+  background-color: rgb(235, 115, 135);
+  font-family: "Poppins", sans-serif;
+}
+
+.header__links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__link {
+  color: black;
+  text-decoration: none;
+}

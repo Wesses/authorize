@@ -58,7 +58,7 @@ export const LoginForm = () => {
   }, [data]);
 
   return (
-    <div className='wrapper'>
+    <div className='login-wrapper'>
       <div className='login-form'>
         <button
           className='login-form__button'

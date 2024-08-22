@@ -6,8 +6,10 @@ export const WeatherForecast = () => {
   const [weatherData, setWeatherData] = useState([]);
 
   useEffect(() => {
+    console.log(tokens);
+
     if (tokens) {
-      getWeather(tokens[0])
+      getWeather(tokens.split(',')[0])
       .then(r => {
         setWeatherData(r);
       })
@@ -24,10 +26,11 @@ export const WeatherForecast = () => {
           {
             weatherData.map(({date, temperatureC, temperatureF, summary}) => (
               <div key={date} >
-                {'date - ' + date}
-                {'temperatureC - ' + temperatureC}
-                {'temperatureF - ' + temperatureF}
-                {'summary - ' + summary + '\n'}
+                <div>{'date - ' + date}</div>
+                <div>{'temperatureC - ' + temperatureC}</div>
+                <div>{'temperatureF - ' + temperatureF}</div>
+                <div>{'summary - ' + summary}</div>
+                <div>--------------------------------------------------</div>
               </div>
             ))
           }

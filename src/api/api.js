@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://communal.in.ua/Cabinet6api/api/';
-const Authenticate = 'Authenticate/';
+axios.defaults.baseURL = 'https://communal.in.ua/Cabinet6api/';
+const Authenticate = 'api/Authenticate/';
 const WeatherForecast = 'WeatherForecast/';
 
 export const swaggerApiReq = async (urlParam, type, data) => {

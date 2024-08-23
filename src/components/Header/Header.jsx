@@ -11,8 +11,8 @@ export const Header = () => {
         <ul><Link className='header__link' to='/login'>
           Login
         </Link></ul>
-        <ul><Link className='header__link' to='/register'>
-          Register
+        <ul><Link className='header__link' to='/registration'>
+          Registration
         </Link></ul>
         <ul><Link className='header__link' to='/weather'>
           Weather forecast

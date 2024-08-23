@@ -4,7 +4,7 @@ axios.defaults.baseURL = 'https://communal.in.ua/Cabinet6api/';
 const Authenticate = 'api/Authenticate/';
 const WeatherForecast = 'WeatherForecast/';
 
-export const swaggerApiReq = async (urlParam, type, data) => {
+export const apiAuthenticateReq = async (urlParam, type, data) => {
   try {
     if (type === 'GET') {
       const response = await axios.get(Authenticate + urlParam);
@@ -17,8 +17,8 @@ export const swaggerApiReq = async (urlParam, type, data) => {
 
       return response.data;
     }
-  } catch (e) {
-    throw new Error(e);
+  } catch (err) {
+    throw new Error(err);
   }
 }
 
@@ -33,7 +33,7 @@ export const getWeather = async (token) => {
       const response = await axios.get(WeatherForecast, headers)
 
       return response.data;
-    } catch (e) {
-      throw new Error(e);
+    } catch (err) {
+      throw new Error(err);
     }
 }

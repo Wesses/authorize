@@ -1,6 +1,6 @@
 import './LoginForm.css'
 import { FaUser, FaLock } from 'react-icons/fa';
-import { swaggerApiReq } from '../../api/api';
+import { apiAuthenticateReq } from '../../api/api';
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 
@@ -16,7 +16,7 @@ export const LoginForm = () => {
   const onSubmitLogin = (e) => {
     e.preventDefault();
 
-    swaggerApiReq('login', 'POST', {
+    apiAuthenticateReq('login', 'POST', {
       username,
       password,
     }).then(r => {
@@ -67,7 +67,7 @@ export const LoginForm = () => {
           test
         </button>
 
-        <form action='' onSubmit={onSubmitLogin}>
+        <form action='#' onSubmit={onSubmitLogin}>
           <h1 className='login-form__header'>
             Login
           </h1>
